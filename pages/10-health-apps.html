@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-n-Meal 건강 앱 선언 및 기능 안내</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #009688;
+            border-bottom: 2px solid #009688;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #202124;
+            margin-top: 30px;
+            border-left: 4px solid #009688;
+            padding-left: 10px;
+        }
+        .feature-box {
+            background-color: #e0f2f1;
+            border: 1px solid #b2dfdb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #00796b;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>10. 건강 앱 (Health Apps)</h1>
+        
+        <p>Google Play Console에서는 앱이 사용자의 건강과 관련된 기능을 제공하는지 확인하고, 의료 기기 또는 전문 의료 앱 여부를 판별합니다. <strong>Fit-n-Meal</strong> 앱의 건강 기능 선언은 다음과 같습니다.</p>
+
+        <h2>건강 기능 제공 여부 및 카테고리</h2>
+        <ul>
+            <li><strong>선택 사항:</strong> <span class="highlight">"예, 앱에서 하나 이상의 건강 기능을 제공합니다."</span></li>
+            <li><strong>해당 카테고리 선택:</strong>
+                <ul>
+                    <li><span class="highlight">피트니스 및 운동 추적 (Fitness and workout tracking)</span></li>
+                    <li><span class="highlight">식단 및 영양 추적 (Diet and nutrition tracking)</span></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>제공하는 핵심 건강 기능 설명</h2>
+        <div class="feature-box">
+            <p><strong>[앱 기능 상세 설명 - 콘솔 참고용]</strong></p>
+            <ul>
+                <li><strong>AI 기반 식단 관리 (Diet Logs):</strong> 사용자가 섭취한 음식 사진을 업로드하면 AI(Google Gemini API)가 분석하여 음식 명칭과 영양성분(칼로리, 탄수화물, 단백질, 지방)을 자동으로 기록합니다.</li>
+                <li><strong>체계적인 운동 추적 (Workout & Routines):</strong> 사용자가 수행한 운동 종목, 세트수, 무게, 횟수 등을 기록하고 개인 운동 루틴을 생성하여 성장을 추적할 수 있도록 돕습니다. 전/후 사진 비교 및 AI 운동 추천 기능도 포함합니다.</li>
+                <li><strong>건강 목표 및 체중 관리 (Weight & Nutrition Goals):</strong> 목표 체중 및 영양소 섭취 목표(하루 칼로리, 탄/단/지 비율)를 설정하고 기간별 변화를 기록/분석합니다.</li>
+            </ul>
+        </div>
+
+        <h2>의료 서비스 여부 선언</h2>
+        <ul>
+            <li><strong>의료 기기 여부:</strong> 본 앱은 의료 기기가 아니며, 질병의 진단, 치료, 예방을 목적으로 하지 않습니다.</li>
+            <li><strong>선언 사항:</strong> "본 앱은 일반적인 피트니스 및 영양 관리 목적의 소프트웨어로, 전문 의료진의 조언이나 진단을 대체할 수 없습니다."라는 점을 약관 및 사용자 인지 영역에 명시해야 합니다.</li>
+        </ul>
+
+        <h2>추가 요구 사항 (Health Connect)</h2>
+        <ul>
+            <li>추후 구글 헬스 커넥트(Health Connect) API를 연동하여 걸음수, 수면 시간 등을 가져오거나 쓰기 권한을 요청할 경우, 관련된 별도 정책 심사(권한 사용 사유 소명)가 추가로 필요할 수 있습니다. (현재 버전에서는 연동되지 않음을 기준으로 작성됨)</li>
+        </ul>
+
+        <div class="footer">
+            <p>최종 수정일: 2026년 3월 23일</p>
+            <p>© 2026 Fit-n-Meal. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

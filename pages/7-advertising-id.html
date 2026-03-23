@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-n-Meal 광고 ID 사용 안내</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #3f51b5;
+            border-bottom: 2px solid #3f51b5;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #202124;
+            margin-top: 30px;
+            border-left: 4px solid #3f51b5;
+            padding-left: 10px;
+        }
+        .warning-box {
+            background-color: #e8eaf6;
+            border: 1px solid #c5cae9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #1a237e;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>7. 광고 ID (Advertising ID)</h1>
+        
+        <p>Android 13(API 수준 33) 이상을 타겟팅하는 모든 앱은 광고 ID를 사용하는 지 여부를 Google Play Console에서 선언해야 합니다. <strong>Fit-n-Meal</strong> 앱의 가이드는 다음과 같습니다.</p>
+
+        <h2>광고 ID 사용 여부</h2>
+        <ul>
+            <li><strong>선택 사항:</strong> <span class="highlight">"예"</span></li>
+            <li><strong>사유:</strong> 앱 내 통합된 Google AdMob SDK를 통해 광고를 노출하고 맞춤형 광고 성과를 측정하기 위해 광고 ID를 활용합니다.</li>
+        </ul>
+
+        <h2>사용 목적 (복수 선택 가능)</h2>
+        <div class="warning-box">
+            <p><strong>[콘솔 입력용 추천 선택지]</strong></p>
+            <ul>
+                <li><strong>광고 또는 마케팅:</strong> 사용자 기기에 적합한 맞춤형 광고를 제공하기 위해 필요합니다.</li>
+                <li><strong>분석:</strong> 광고의 효율성 및 사용자 상호작용 분석을 위해 필요합니다.</li>
+            </ul>
+        </div>
+
+        <h2>중요 개발자 고지 (Android 13 대응)</h2>
+        <ul>
+            <li>앱의 <strong>AndroidManifest.xml</strong>에 공식적으로 아래 권한을 선언해야 합니다:
+                <br><code>&lt;uses-permission android:name="com.google.android.gms.permission.AD_ID"/&gt;</code></li>
+            <li>선언하지 않을 경우, Android 13 기기에서 광고 ID가 0000...으로 처리되어 광고 노출 및 성과 측정에 문제가 발생할 수 있습니다.</li>
+        </ul>
+
+        <h2>사용자의 권리</h2>
+        <ul>
+            <li>사용자는 기기 설정의 **[개인정보 보호 > 광고]** 메뉴에서 언제든지 광고 ID를 초기화하거나 '광고 개인 최적화 선택 해제'를 선택할 수 있습니다.</li>
+            <li>앱은 사용자의 설정을 전적으로 존중하며, 수집 거부 시 맞춤형 광고를 송출하지 않습니다.</li>
+        </ul>
+
+        <div class="footer">
+            <p>최종 수정일: 2026년 3월 23일</p>
+            <p>© 2026 Fit-n-Meal. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
